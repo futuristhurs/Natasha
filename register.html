@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience Management System - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="registration-container">
+        <h1>Register</h1>
+        <div id="step-indicator">
+            <span class="step active">1</span>
+            <span class="step">2</span>
+            <span class="step">3</span>
+        </div>
+        <div id="step-content">
+            <p>Who are you registering as?</p>
+            <form id="step-1-form">
+                <label for="role">Select Role:</label>
+                <select id="role" name="role" required>
+                    <option value="student">Student</option>
+                    <option value="supervisor">Industry Supervisor</option>
+                    <option value="university">University Administrator</option>
+                </select>
+                <button type="submit">Next</button>
+            </form>
+
+            <form id="step-2-form" class="hidden">
+                <h2>School Details</h2>
+                <label for="school-name">School Name:</label>
+                <input type="text" id="school-name" name="school-name" required>
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+                <label for="matric-number">Matriculation Number:</label>
+                <input type="text" id="matric-number" name="matric-number" required>
+                <button type="submit">Next</button>
+            </form>
+
+            <form id="step-3-form" class="hidden">
+                <h2>Additional Information</h2>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

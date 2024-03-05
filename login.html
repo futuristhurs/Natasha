@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience Management System - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Work Experience Management System</h1>
+        <form id="login-form">
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="student">Student</option>
+                <option value="supervisor">Industry Supervisor</option>
+                <option value="university">University Administrator</option>
+            </select>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <span id="error-message"></span>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
