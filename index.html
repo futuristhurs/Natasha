@@ -3,42 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience Management System - Student Dashboard</title>
+    <title>Six-Month Calendar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Work Experience Management System</h1>
-        <h2>Student Dashboard</h2>
-    </header>
-    <main>
-        <section class="card">
-            <h3>My Placement</h3>
-            <p>Company: Acme Industries</p>
-            <p>Supervisor: John Smith (john.smith@acme.com)</p>
-            <p>Start Date: 2024-05-15</p>
-            <p>End Date: 2024-08-15</p>
-            <a href="#">View Details</a>
-        </section>
-        <section class="card">
-            <h3>Tasks</h3>
-            <ul>
-                <li>Orientation and Company Overview (Completed)</li>
-                <li>Market Research Project (In Progress)</li>
-                <li>Social Media Management (Not Started)</li>
-            </ul>
-            <a href="#">View All Tasks</a>
-        </section>
-        <section class="card">
-            <h3>Documents</h3>
-            <ul>
-                <li>Work Agreement</li>
-                <li>Safety Guidelines</li>
-                <li>Mid-Term Evaluation Form</li>
-            </ul>
-            <a href="#">View All Documents</a>
-        </section>
-    </main>
+    <div class="calendar">
+        <input type="date" id="start-date" onchange="updateCalendar()">
+        <header class="calendar-header">
+            <h1 class="calendar-title"></h1>
+            <div class="icons">
+                <span class="prev" onclick="prevMonth()">&#10094;</span>
+                <span class="next" onclick="nextMonth()">&#10095;</span>
+            </div>
+        </header>
+        <div class="calendar-months">
+            <table class="calendar-table month1"></table>
+            <table class="calendar-table month2"></table>
+            <table class="calendar-table month3"></table>
+            <table class="calendar-table month4"></table>
+            <table class="calendar-table month5"></table>
+            <table class="calendar-table month6"></table>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
